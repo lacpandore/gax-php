@@ -57,8 +57,7 @@ trait OptionsTrait
         return isset($this->$offset);
     }
 
-    #[\ReturnTypeWillChange]
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->$offset;
     }
